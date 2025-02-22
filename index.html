@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayores edad</title>
+  </head>
+  <body>
+    <section id="mainForm">
+      <h3>Mayores de edad</h3>
+      <table id="mainFormTable">
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+        </tr>
+      </table>
+      <h5>
+        Porcentaje de personas mayores de edad:
+        <span id="porcentPersonas"></span>%
+      </h5>
+      <h5>Cantidad de personas: <span id="cantPersonas"></span></h5>
+      <h5>
+        Cantidad de personas mayores de edad:
+        <span id="cantPersonasMEdad"></span>
+      </h5>
+      <button id="btAgregar">Agregar personas</button>
+    </section>
+    <section id="personaForm">
+      <input type="text" id="pNombre" placeholder="Nombre" />
+      <input type="number" id="pEdad" placeholder="Edad" />
+      <button id="btAceptar">Aceptar</button>
+    </section>
+    <script type="module">
+      import Index from './js/index.js'
+      new Index()
+    </script>
+  </body>
+</html>
